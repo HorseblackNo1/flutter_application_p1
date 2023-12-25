@@ -2,33 +2,12 @@
 
 A new Flutter project.
 
-## Initial
-<details><summary>...</summary>
-
-```shell
-$ dart --version
-$ flutter --version
-$ flutter doctor
-
-VS Code → ⌘ + Shift + P → > Flutter: New Project
-
-$ flutter pub add dio
-$ flutter pub add intl
-$ flutter pub add crypto
-$ flutter pub add package_info_plus
-$ flutter pub add device_info_plus
-```
-
-</p>
-
-</details>
-
 
 ## Install
 
 ```shell
-$ git clone git@github.com:bxjm/test_flutter.git
-$ cd test_flutter
+$ https://github.com/HorseblackNo1/flutter_application_p1.git
+$ cd flutter_application_p1
 $ flutter pub get
 ```
 

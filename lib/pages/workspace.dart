@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter_application_p1/pages/detail1.dart';
 import 'package:flutter_application_p1/pages/detail2.dart';
 import 'package:flutter_application_p1/pages/detail3.dart';
-
+import 'package:flutter_application_p1/pages/baseDemoList/baseDemoList.dart';
 
 
 class WorkSpace extends StatefulWidget {
@@ -63,6 +63,24 @@ class _WorkSpace extends State<WorkSpace> {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (BuildContext context) { 
                      return const Detail3();
+                    })
+                  );
+                },
+              )),
+              Card(
+                  child: ListTile(
+                title: const Text('baseDemoList'),
+                trailing: const Icon(Icons.more_vert),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (BuildContext context) { 
+                     return  Scaffold(
+                      appBar: AppBar(
+                        title:const Text('baseDemoList'),
+                        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+                      ),
+                      body:BaseDemoList()
+                     );
                     })
                   );
                 },

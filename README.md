@@ -3,6 +3,11 @@
 A new Flutter project.
 
 
+# Mac + Interl
+
+# IDE
+    vscode + Flutter(扩展组件) + Dart
+
 ## Install
 
 ```shell

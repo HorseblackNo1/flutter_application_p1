@@ -3,7 +3,8 @@
 A new Flutter project.
 
 
-# Mac + Interl
+# 系统
+    MacOS + Intel
 
 # IDE
     vscode + Flutter(扩展组件) + Dart

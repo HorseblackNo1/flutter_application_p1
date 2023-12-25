@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextWidget extends StatelessWidget {
-
+  const  TextWidget({super.key});
   final TextStyle _style = const TextStyle(
     fontSize:16.0,
     fontWeight: FontWeight.bold
@@ -16,7 +16,7 @@ class TextWidget extends StatelessWidget {
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
             title: const Text('Text')),
         body: SingleChildScrollView(
-          padding: EdgeInsets.all(20),
+          padding:const  EdgeInsets.all(20),
           child:  Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[

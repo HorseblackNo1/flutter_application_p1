@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_p1/pages/baseDemoList/textWidget.dart';
 import 'package:flutter_application_p1/pages/baseDemoList/richTextWidget.dart';
+import 'package:flutter_application_p1/pages/baseDemoList/container.dart';
+
 
 
 class BaseDemoList extends StatelessWidget {
+
+  const BaseDemoList({super.key});
   @override
   Widget build(BuildContext context) {
     return GridView.count(
@@ -41,7 +45,24 @@ class BaseDemoList extends StatelessWidget {
                   child: const Text('click Text'))
             ],
           ));
-        } else {
+        } else if(index == 2){
+          return Center(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('$index: container'),
+              ElevatedButton(
+                  onPressed: () {
+                    print('$index');
+
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => ContainerWidget()));
+                  },
+                  child: const Text('click Text'))
+            ],
+          ));
+        } 
+        else {
           return Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
